@@ -1,0 +1,143 @@
+/* ブラウザがそれぞれ持っているCSSをリセットするための記述 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+a {
+  text-decoration: none;
+  color: #38b48b;
+}
+
+header, nav, h2, .syokai-info, .syokai-label, .soclai i, footer {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  background-color: darkgreen;
+}
+
+header .heading {
+  color: #fff;
+}
+
+.nav-list {
+  text-align: center;
+  margin: 10px 0 0 0;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px 0 20px;
+  color: #fff;
+}
+
+main {
+  width: 100%;
+  height: 1400px;
+  background-color: #ecfcdf;
+  padding: 10px 40px 40px 40px;
+}
+
+.syokai-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.syokai-heading {
+  text-align: center;
+  margin: 0 0 10px 0;
+}
+
+.syokai-gazo {
+  width: 30%;
+  height: 30%;
+  padding-right: 10px;
+  display: flex;
+}
+
+.syokai-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.syokai-info {
+  width: 70%;
+  height: 480px;
+  padding: 0 0 0 10px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.syokai-label {
+  width: 100px;
+  line-height: 40px;
+  font-weight: bold;
+}
+
+.syokai-text {
+  line-height: 40px;
+  margin: 0 0 0 10px;
+}
+
+.social {
+  position: absolute;
+  padding-left: 110px;
+}
+
+.social i {
+  display: inline-block;
+  padding-right: 10px;
+  margin: 0 20px 20px 0;
+}
+footer {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  background-color: darkgreen;
+}
+
+.footer-text {
+  color: #fff;
+}
+
+@media screen and (max-width:768px) {
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    display: block;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .syokai {
+    display: block;
+  }
+  .syokai-box {
+    display: block;
+  }
+
+  footer {
+    position: absolute;
+    bottom: 0;
+  }
+}
