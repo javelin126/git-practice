@@ -11,44 +11,42 @@ a {
   color: #38b48b;
 }
 
-header, nav, h2, .syokai-info, .syokai-label, .soclai i, footer {
+header, nav, h1, h2, .syokai-info, .syokai-label, .soclai i, footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
   width: 100%;
   height: 100px;
+  padding-top: 10px;
   text-align: center;
   background-color: darkgreen;
 }
 
-header .heading {
-  color: #fff;
-}
-
-.nav-list {
-  text-align: center;
-  margin: 10px 0 0 0;
-}
-
-.nav-list-item {
-  list-style: none;
-  display: inline-block;
-  margin: 0 20px 0 20px;
+header .heading a {
   color: #fff;
 }
 
 main {
-  width: 100%;
-  height: 1400px;
   background-color: #ecfcdf;
-  padding: 10px 40px 40px 40px;
+}
+
+.nav-list {
+  margin: 10px 0 0 0;
+}
+
+.nav-list-item {
+  display: inline;
+  flex-wrap: wrap;
+  margin: 0 20px 0 20px;
+  color: #fff;
 }
 
 .syokai-box {
   display: flex;
   justify-content: center;
   flex-direction: row;
+  padding: 10px 40px 40px 40px;
 }
 
 .syokai-heading {
@@ -59,18 +57,12 @@ main {
 .syokai-gazo {
   width: 30%;
   height: 30%;
-  padding-right: 10px;
-  display: flex;
+  margin-right: 10px;
 }
 
 .syokai-image {
   width: 100%;
   border-radius: 10px;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
 }
 
 .syokai-info {
@@ -80,34 +72,34 @@ main {
   background-color: #fff;
   border-radius: 10px;
 }
+.row {
+  display: flex;
+  line-height: 40px;
+}
 
 .syokai-label {
   width: 100px;
-  line-height: 40px;
   font-weight: bold;
 }
 
 .syokai-text {
-  line-height: 40px;
   margin: 0 0 0 10px;
 }
 
 .social {
-  position: absolute;
   padding-left: 110px;
 }
 
 .social i {
   display: inline-block;
-  padding-right: 10px;
-  margin: 0 20px 20px 0;
+  padding: 0 20px 0 0;
 }
+
 footer {
   width: 100%;
   height: 100px;
-  position: absolute;
-  bottom: 0;
   text-align: center;
+  line-height: 100px;
   background-color: darkgreen;
 }
 
@@ -116,28 +108,28 @@ footer {
 }
 
 @media screen and (max-width:768px) {
-  .nav-list {
-    width: 100%;
+  .heading {
+    width: 100%
   }
 
   .nav-list-item {
-    display: block;
+    flex-wrap: wrap;
   }
 
-  main {
+  .syokai-heading {
     width: 100%;
-    display: block;
   }
 
-  .syokai {
-    display: block;
-  }
   .syokai-box {
     display: block;
   }
 
-  footer {
-    position: absolute;
-    bottom: 0;
+  .syokai-gazo {
+    width: 100%;
+  }
+
+  .syokai-info {
+    width: 100%;
+    margin: 10px 0 0 0;
   }
 }
